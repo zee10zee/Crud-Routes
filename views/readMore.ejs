@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+   
+
+       <h1><%- Article.Title %> </h1>
+          <p class="text-muted"><%= Article.createdAt  %></p>
+       <p><%- Article.description %></p>
+
+       <a href="/article/<%= Article._id %>/edit"  class="btn btn-info d-inline" >Edit</a>
+       <form action="/article/<%=Article._id%>/delete?_method=DELETE" method = "POST" class="d-inline ml-1">
+          <button class="btn btn-danger">Delete</button>
+       </form>
+       <a href="/"  class="btn btn-info d-inline" >Back</a>
+
+ 
+        <%- include("partials/footer"); %>

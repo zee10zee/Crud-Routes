@@ -1,0 +1,54 @@
+
+a{
+   color: #000;
+   text-decoration: none;
+}
+
+.fa-plus{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    width: fit-content;
+}
+
+
+ h1,h2,h3{
+     text-transform: capitalize;
+ }
+
+ #navbar{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #navbar .navbar-brand{
+      color: purple;
+      font-size: 30px;
+      font-family: monospace;
+ }
+
+
+.navLinks{
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.navLinks li {
+margin: 20px 15px;
+}
+.navLinks a{
+   color: #fff;
+}
+
+.user-highlighter{
+    font-weight: bold;
+}
+
+.nav-item{
+    list-style: none;
+}

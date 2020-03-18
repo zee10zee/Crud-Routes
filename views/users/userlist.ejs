@@ -1,0 +1,20 @@
+
+<%- include("../partials/header") %>
+
+<% users.forEach((user)=>{ %>
+    <div class="card mb-4 border border-primary">
+        <div class="card-body">
+            <div class="card-title">
+                <p class="d-inline user-highlighter"> Username : </p> <p class="d-inline"><%= user.fname %></p>
+            </div>
+            <div class="card-link mb-4">
+             <p class="d-inline user-highlighter">Email Adress :</p><a href="#">  <%= user.email %></a>
+            </div>
+            <div class="card-text">
+             <p class="user-highlighter">User's suggestion : </p><p><%= user.opinion%></p>
+            </div>
+        </div>
+    </div>
+<% }) %>
+
+<%- include("../partials/footer") %>

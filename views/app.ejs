@@ -1,0 +1,35 @@
+
+<%- include("partials/header")%>
+
+<% articles.forEach((article)=>{ %>
+
+          <div class="card mb-3">     
+            <div class="card-body">
+              <div class="card-title">
+                <h1><%- article.Title %> </h1>
+              </div>
+              <div class="card-subtitle">
+                <p class="text-muted"><%= article.createdAt %> </p>
+              </div>
+                <div class="card-text">
+                  <p><%- article.description.substring(0,100); %> ....</p>
+                </div>
+             
+              <a href="/more/<%= article._id %>/show"  class="btn btn-warning">  read More </a>
+
+               <form action="/article/<%=article._id%>/delete?_method=DELETE" method = "POST" class="d-inline ml-1">
+                  <button class="btn btn-danger">Delete</button>
+               </form>
+             
+            </div>
+       
+          </div>
+ <% }) %>
+
+
+
+     
+
+   
+
+ <%- include("partials/footer") %>
